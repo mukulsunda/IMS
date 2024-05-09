@@ -13,7 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Account settings</title>
+    <title>EVENTS</title>
 
     <meta name="description" content="" />
 
@@ -116,52 +116,56 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboards -->
-            <li class="menu-item">
+            <li class="menu-item active open">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Dashboards">Dashboards</div>
-                
               </a>
               <ul class="menu-sub">
                 
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="index.html" class="menu-link">
                     <div data-i18n="Analytics">Analytics</div>
                   </a>
-                </li>
-                <li class="menu-item active open">
-                  <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-home-smile"></i>
-                    <div data-i18n="Dashboards">Property Listings</div>
+                </li>  
+              </ul>
+            </li>           
+            
+            <li class="menu-item active open">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-home-smile"></i>
+                <div data-i18n="Dashboards">Events</div>
+              </a>
+              <ul class="menu-sub">
+                
+                <li class="menu-item active">
+                  <a href="event.html" class="menu-link">
+                    <div data-i18n="Analytics">Functions</div>
                   </a>
-                  <ul class="menu-sub">
-                    
-                    <li class="menu-item active">
-                      <a href="on sale.html" class="menu-link">
-                        <div data-i18n="Analytics">On Sale</div>
-                      </a>
-                    </li>  
-                    <li class="menu-item active">
-                      <a href="add property.html" class="menu-link">
-                        <div data-i18n="Analytics">Add Property</div>
-                      </a>
-                    </li> 
-                  </ul>
-                </li>
+                </li>  
+              </ul>
+            </li>         
+            <li class="menu-item active open">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-home-smile"></i>
+                <div data-i18n="Dashboards">Property Listings</div>
+              </a>
+              <ul class="menu-sub">
                 
-                
-                
+                <li class="menu-item active">
+                  <a href="on sale.html" class="menu-link">
+                    <div data-i18n="Analytics">On Sale</div>
+                  </a>
+                </li>  
+                <li class="menu-item active">
+                  <a href="add property.html" class="menu-link">
+                    <div data-i18n="Analytics">Add Property</div>
+                  </a>
+                </li> 
               </ul>
             </li>
-
-            
-
-            
-
-            
-            
             <!-- Pages -->
-            <li class="menu-item active open">
+            <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Account Settings">Account Settings</div>
@@ -172,7 +176,7 @@
                     <div data-i18n="Account">Account</div>
                   </a>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="pages-account-settings-notifications.html" class="menu-link">
                     <div data-i18n="Notifications">Notifications</div>
                   </a>
@@ -203,10 +207,11 @@
                 </li>
               </ul>
             </li>
-            
-            
-            
-          </ul>
+            </ul>
+
+           
+
+           
         </aside>
         <!-- / Menu -->
 
@@ -242,7 +247,6 @@
                 <li class="nav-item lh-1 me-3">
                   <a
                     class="github-button"
-                    href="https://github.com/themeselection/sneat-html-admin-template-free"
                     data-icon="octicon-star"
                     data-size="large"
                     data-show-count="true"
@@ -321,140 +325,147 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="py-3 mb-4"><span class="text-muted fw-light">Account Settings /</span> Notifications</h4>
+              
 
-              <div class="row">
-                <div class="col-md-12">
-                  <ul class="nav nav-pills flex-column flex-md-row mb-3">
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages-account-settings-account.html"
-                        ><i class="bx bx-user me-1"></i> Account</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="javascript:void(0);"
-                        ><i class="bx bx-bell me-1"></i> Notifications</a
-                      >
-                    </li>
+              
+
+              <!-- Basic -->
+              
+                <div class="col-md-6">
+                  <div class="card mb-4">
+                    <h5 class="card-header">Basic</h5>
+                    <div class="card-body">
+                      <div>
+                        <label for="defaultFormControlInput" class="form-label">Name of Vendor</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="defaultFormControlInput"
+                          placeholder="John Doe"
+                          aria-describedby="defaultFormControlHelp" />
+              
+                      </div>
+                    </div>
+                    <div class="card-body demo-vertical-spacing demo-only-element">
+                      <div class="input-group">
+                        <span class="input-group-text" id="basic-addon11">@</span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Address of Property"
+                          aria-label="Username"
+                          aria-describedby="basic-addon11" />
+                      </div>
+
+                   
                     
-                  </ul>
-                  <div class="card">
-                    <!-- Notifications -->
-                    <h5 class="card-header">Recent Devices</h5>
-                    <div class="card-body">
-                      <span
-                        >We need permission from your browser to show notifications.
-                        <span class="notificationRequest"><span class="fw-medium">Request Permission</span></span></span
-                      >
-                      <div class="error"></div>
+
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Add Images : "
+                          aria-label="Recipient's username"
+                          aria-describedby="basic-addon13" />
+                        <span class="input-group-text" id="basic-addon13">example.com</span>
+                      </div>
+
+                      <div class="input-group">
+                        <span class="input-group-text" id="basic-addon14">+91 -</span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Phone number"
+                          id="basic-url1"
+                          aria-describedby="basic-addon14" />
+                      </div>
+
+                    
+
+                      <div class="input-group">
+                        <span class="input-group-text">Availability Status</span>
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Comment"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary" onclick="window.location.href = 'On Sale.html';">Send</button>
                     </div>
-                    <div class="table-responsive">
-                      <table class="table table-striped table-borderless border-bottom">
-                        <thead>
-                          <tr>
-                            <th class="text-nowrap">Type</th>
-                            <th class="text-nowrap text-center">✉️ Email</th>
-                            <th class="text-nowrap text-center">🖥 Browser</th>
-                            <th class="text-nowrap text-center">👩🏻‍💻 App</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-nowrap">New for you</td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck1" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck2" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck3" checked />
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-nowrap">Account activity</td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck4" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck5" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck6" checked />
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-nowrap">A new browser used to sign in</td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck7" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck8" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck9" />
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-nowrap">A new device is linked</td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck10" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck11" />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck12" />
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="card-body">
-                      <h6>When should we send you notifications?</h6>
-                      <form action="javascript:void(0);">
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <select id="sendNotification" class="form-select" name="sendNotification">
-                              <option selected>Only when I'm online</option>
-                              <option>Anytime</option>
-                            </select>
-                          </div>
-                          <div class="mt-4">
-                            <button type="submit" class="btn btn-primary me-2">Save changes</button>
-                            <button type="reset" class="btn btn-outline-secondary">Discard</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <!-- /Notifications -->
                   </div>
                 </div>
-              </div>
+
+                <!-- Merged -->
+                <div class="col-md-6">
+                  <div class="card mb-4">
+                    <h5 class="card-header">Information for Listing</h5>
+                    <div class="card-body demo-vertical-spacing demo-only-element">
+                      <div class="input-group input-group-merge">
+                        <span class="input-group-text" id="basic-addon-search31"><i class="bx bx-search"></i></span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Search..."
+                          aria-label="Search..."
+                          aria-describedby="basic-addon-search31" />
+                      </div>
+
+                      <div class="form-password-toggle">
+                        <label class="form-label" for="basic-default-password32">Credentials</label>
+                        <div class="input-group input-group-merge">
+                          <input
+                            type="Name of Property"
+                            class="form-control"
+                            id="basic-default-password32"
+                            placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                            aria-describedby="basic-default-password" />
+                          <span class="input-group-text cursor-pointer" id="basic-default-password"
+                            ><i class="bx bx-hide"></i
+                          ></span>
+                        </div>
+                      </div>
+
+                      <div class="input-group input-group-merge">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Size of Property"
+                          aria-label="Recipient's username"
+                          aria-describedby="basic-addon33" />
+                        <span class="input-group-text" id="basic-addon33">sq. feet</span>
+                      </div>
+
+                      <div class="input-group input-group-merge">
+                        <span class="input-group-text" id="basic-addon34">Property Pricing</span>
+                        <input type="text" class="form-control" id="basic-url3" aria-describedby="basic-addon34" />
+                      </div>
+
+                      <div class="input-group input-group-merge">
+                        <span class="input-group-text">Rs.</span>
+                        <input
+                          type="number"
+                          class="form-control"
+                          placeholder="67,120"
+                          aria-label="Amount (to the nearest dollar)" />
+                        <span class="input-group-text">.00</span>
+                      </div>
+
+                      <div class="input-group input-group-merge">
+                        <span class="input-group-text">Additional Information</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-danger" onclick="window.location.href = 'On Sale.html';">Send</button>
+                    </div>
+                  </div>
+                </div>
+
+                
+                
+              </div>  
+              
+
+              
+
+              
+
+              
+              <!--/ Card layout -->
             </div>
             <!-- / Content -->
 
@@ -466,7 +477,12 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
+                </div>
+                
+
                   
+                 
+                </div>
               </div>
             </footer>
             <!-- / Footer -->
@@ -497,6 +513,7 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/masonry/masonry.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>

@@ -13,7 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Account settings</title>
+    <title>EVENTS</title>
 
     <meta name="description" content="" />
 
@@ -116,52 +116,56 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboards -->
-            <li class="menu-item">
+            <li class="menu-item active open">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Dashboards">Dashboards</div>
-                
               </a>
               <ul class="menu-sub">
                 
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="index.html" class="menu-link">
                     <div data-i18n="Analytics">Analytics</div>
                   </a>
-                </li>
-                <li class="menu-item active open">
-                  <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-home-smile"></i>
-                    <div data-i18n="Dashboards">Property Listings</div>
-                  </a>
-                  <ul class="menu-sub">
-                    
-                    <li class="menu-item active">
-                      <a href="on sale.html" class="menu-link">
-                        <div data-i18n="Analytics">On Sale</div>
-                      </a>
-                    </li>  
-                    <li class="menu-item active">
-                      <a href="add property.html" class="menu-link">
-                        <div data-i18n="Analytics">Add Property</div>
-                      </a>
-                    </li> 
-                  </ul>
-                </li>
-                
-                
-                
+                </li>  
               </ul>
-            </li>
-
+            </li>           
             
-
-            
-
-            
-            
-            <!-- Pages -->
             <li class="menu-item active open">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-home-smile"></i>
+                <div data-i18n="Dashboards">Events</div>
+              </a>
+              <ul class="menu-sub">
+                
+                <li class="menu-item active">
+                  <a href="event.html" class="menu-link">
+                    <div data-i18n="Analytics">Functions</div>
+                  </a>
+                </li>  
+              </ul>
+            </li>    
+            <li class="menu-item active open">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-home-smile"></i>
+                <div data-i18n="Dashboards">Property Listings</div>
+              </a>
+              <ul class="menu-sub">
+                
+                <li class="menu-item active">
+                  <a href="on sale.html" class="menu-link">
+                    <div data-i18n="Analytics">On Sale</div>
+                  </a>
+                </li>  
+                <li class="menu-item active">
+                  <a href="add property.html" class="menu-link">
+                    <div data-i18n="Analytics">Add Property</div>
+                  </a>
+                </li> 
+              </ul>
+            </li>     
+            <!-- Pages -->
+            <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Account Settings">Account Settings</div>
@@ -172,7 +176,7 @@
                     <div data-i18n="Account">Account</div>
                   </a>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="pages-account-settings-notifications.html" class="menu-link">
                     <div data-i18n="Notifications">Notifications</div>
                   </a>
@@ -203,10 +207,11 @@
                 </li>
               </ul>
             </li>
-            
-            
-            
-          </ul>
+            </ul>
+
+           
+
+           
         </aside>
         <!-- / Menu -->
 
@@ -242,7 +247,6 @@
                 <li class="nav-item lh-1 me-3">
                   <a
                     class="github-button"
-                    href="https://github.com/themeselection/sneat-html-admin-template-free"
                     data-icon="octicon-star"
                     data-size="large"
                     data-show-count="true"
@@ -321,140 +325,138 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="py-3 mb-4"><span class="text-muted fw-light">Account Settings /</span> Notifications</h4>
+              
 
-              <div class="row">
-                <div class="col-md-12">
-                  <ul class="nav nav-pills flex-column flex-md-row mb-3">
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages-account-settings-account.html"
-                        ><i class="bx bx-user me-1"></i> Account</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="javascript:void(0);"
-                        ><i class="bx bx-bell me-1"></i> Notifications</a
-                      >
-                    </li>
-                    
-                  </ul>
-                  <div class="card">
-                    <!-- Notifications -->
-                    <h5 class="card-header">Recent Devices</h5>
-                    <div class="card-body">
-                      <span
-                        >We need permission from your browser to show notifications.
-                        <span class="notificationRequest"><span class="fw-medium">Request Permission</span></span></span
-                      >
-                      <div class="error"></div>
-                    </div>
-                    <div class="table-responsive">
-                      <table class="table table-striped table-borderless border-bottom">
-                        <thead>
-                          <tr>
-                            <th class="text-nowrap">Type</th>
-                            <th class="text-nowrap text-center">✉️ Email</th>
-                            <th class="text-nowrap text-center">🖥 Browser</th>
-                            <th class="text-nowrap text-center">👩🏻‍💻 App</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-nowrap">New for you</td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck1" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck2" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck3" checked />
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-nowrap">Account activity</td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck4" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck5" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck6" checked />
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-nowrap">A new browser used to sign in</td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck7" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck8" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck9" />
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-nowrap">A new device is linked</td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck10" checked />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck11" />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="form-check d-flex justify-content-center">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck12" />
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="card-body">
-                      <h6>When should we send you notifications?</h6>
-                      <form action="javascript:void(0);">
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <select id="sendNotification" class="form-select" name="sendNotification">
-                              <option selected>Only when I'm online</option>
-                              <option>Anytime</option>
-                            </select>
+              
+
+              
+              
+
+              
+
+              
+
+              <!-- Horizontal -->
+              <div class="card">
+                <h5 class="card-header">Properties Available for Sale</h5>
+                <div class="table-responsive text-nowrap">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Vendor</th>
+                        <th>Property Address</th>
+                        <th>Type</th>
+                        <th>Property Size</th>
+                        <th>Actions</th>
+                        <th>Availability</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td>
+                          <i class="bx bxl-angular bx-sm text-danger me-3"></i>
+                          <span class="fw-medium">Atlantis Avenue</span>
+                        </td>
+                        <td>143, 5th floor, S Tower</td>
+                        <td>Flat</td>
+                        <td>300 sq. feet</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-1"></i> Delete</a
+                              >
+                            </div>
                           </div>
-                          <div class="mt-4">
-                            <button type="submit" class="btn btn-primary me-2">Save changes</button>
-                            <button type="reset" class="btn btn-outline-secondary">Discard</button>
+                        </td>
+                        <td><button type="button" class="btn btn-primary">Ready to Move in !</button></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="bx bxl-react bx-sm text-info me-3"></i> <span class="fw-medium">Sivanta Greens</span>
+                        </td>
+                        <td>134, 9th floor, Block D</td>
+                        <td>Flat</td>
+                        <td>374 sq. feet</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-1"></i> Delete</a
+                              >
+                            </div>
                           </div>
-                        </div>
-                      </form>
-                    </div>
-                    <!-- /Notifications -->
-                  </div>
+                        </td>
+                        <td><button type="button" class="btn btn-danger">On Sale !</button></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="bx bxl-vuejs bx-sm text-success me-3"></i>
+                          <span class="fw-medium">Wave Boulevard</span>
+                        </td>
+                        <td>165, 2nd floor</td>
+                        <td>Apartment</td>
+                        <td>410 sq. feet</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-1"></i> Delete</a
+                              >
+                            </div>
+                          </div>
+                        </td>
+                        <td><button type="button" class="btn btn-info">On Sale !</button></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="bx bxl-bootstrap bx-sm text-primary me-3"></i>
+                          <span class="fw-medium">Wave Estate</span>
+                        </td>
+                        <td>156, New Avenue</td>
+                        <td>Independent Home</td>
+                        <td>900 sq. feet</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-1"></i> Delete</a
+                              >
+                            </div>
+                          </div>
+                        </td>
+                        <td><button type="button" class="btn btn-warning">Vacancy Available !</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
+              <!--/ Hoverable Table rows -->
+                            <!--/ Card layout -->
             </div>
             <!-- / Content -->
 
@@ -466,7 +468,12 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
+                </div>
+                
+
                   
+                 
+                </div>
               </div>
             </footer>
             <!-- / Footer -->
@@ -497,6 +504,7 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/masonry/masonry.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
